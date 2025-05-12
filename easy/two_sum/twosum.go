@@ -35,9 +35,23 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 */
 
 func twoSum(nums []int, target int) []int {
+	var fIndex, sIndex = 0, 0 //first index and second index of the pair
 	var result = make([]int, 2)
-	numMap := make(map[int]int)
-	for i, v := range nums {
-
+	for fIndex < len(nums) {
+		if fIndex == sIndex {
+			sIndex++
+		}
+		if sIndex == len(nums) {
+			sIndex = 0
+			fIndex++
+			continue
+		}
+		if nums[fIndex]+nums[sIndex] == target {
+			break
+		}
+		sIndex++
 	}
+	result[0] = fIndex
+	result[1] = sIndex
+	return result
 }

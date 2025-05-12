@@ -14,7 +14,7 @@ func TestTwoSum(t *testing.T) {
 		{nums: []int{2, 7, 11, 15}, target: 9, want: []int{0, 1}},
 		{nums: []int{3, 2, 4}, target: 6, want: []int{1, 2}},
 		{nums: []int{3, 3}, target: 6, want: []int{0, 1}},
-		{nums: []int{1, 5, 3, 7}, target: 8, want: []int{0, 3}},
+		{nums: []int{1, 5, 2, 7}, target: 8, want: []int{0, 3}},
 		{nums: []int{-1, -2, -3, -4, -5}, target: -8, want: []int{2, 4}},
 		{nums: []int{0, 4, 3, 0}, target: 0, want: []int{0, 3}},
 		{nums: []int{1, 2}, target: 3, want: []int{0, 1}},
